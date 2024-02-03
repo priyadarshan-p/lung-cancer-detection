@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lung Cancer Detection Demo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lung Cancer Detection Demo</h1>
+        <form id="cancerForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="smokingHistory">Smoking History (in years):</label>
+            <input type="number" id="smokingHistory" required>
+
+            <label for="chronicCough">Do you have a chronic cough?</label>
+            <select id="chronicCough" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="shortnessOfBreath">Do you experience shortness of breath?</label>
+            <select id="shortnessOfBreath" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="chestPain">Do you have chest pain?</label>
+            <select id="chestPain" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="button" onclick="detectCancer()">Detect Cancer</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
